@@ -5,10 +5,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Average calc = new Average();
-            Console.WriteLine("Você quer calcular a média de quantos números?");
-            int quant = int.Parse(Console.ReadLine());
-            int[] vetor = new int[quant];
+            Console.WriteLine("Calculadora de Média");
+            Console.Write("Digite a quantidade de números que quer calcular a média: ");
+            int quantidadeNumeros = Convert.ToInt32(Console.ReadLine());
+
+            List<double> numeros = new List<double>();
 
             for (int i = 0; i >= 0; i++) {
                 Console.WriteLine($"Digite o {i+1}º número: ");
@@ -35,3 +36,5 @@ namespace ConsoleApp1
         }
     }
 }
+
+        
